@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Haven — Interior Design Studio</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav-outer">
+  <nav class="nav">
+    <a href="#" class="nav-logo" aria-label="Haven home">
+      <svg width="22" height="31" viewBox="0 0 213 302" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.4979 0.188544C8.02477 -0.290049 4.78618 0.076029 3.04759 2.05931C0.90915 7.33415 3.96164 13.4134 3.16383 16.8573C0.823831 26.9593 0.79757 32.1352 1.57616 42.4867C1.18944 50.3912 2.45368 58.9056 2.18462 66.6807C1.5443 85.1996 -0.773193 100.985 3.43571 119.393C2.79306 121.071 1.66852 123.194 0.854299 124.848C2.63039 133.149 -0.96774 143.221 0.261323 148.982C3.04007 162.017 2.03555 166.517 1.39992 179.492C1.04836 186.669 4.12476 199.147 3.36819 207.181C3.09866 210.046 4.93618 216.214 4.65399 219.453C4.40134 235.827 2.37725 252.139 1.80959 268.513C1.62772 274.166 1.70696 294.06 5.21696 298.771C7.69383 301.096 17.2446 302.178 20.4298 301.771C29.4898 300.603 38.0341 300.81 46.9976 300.285C50.7462 299.797 56.8545 296.966 60.4938 297.299C71.9463 298.349 83.0543 298.166 94.4965 298.302C104.614 298.419 115.124 299.957 125.265 300.308C136.242 301.466 148.595 299.16 159.253 299.633C171.405 300.172 183.308 300.552 195.486 300.735C200.792 301.157 205.068 299.117 208.382 294.932C211.014 291.603 210.601 287.647 210.406 283.63C210.176 281.469 212.291 277.817 212.258 275.933C212.014 261.678 213.361 246.796 212.65 232.569C212.13 222.177 210.467 211.667 210.849 201.139C211.659 189.767 211.21 178.278 211.484 166.958C211.851 151.742 212.555 139.607 210.505 124.424C208.969 113.044 212.036 98.5937 209.858 86.5942C208.847 81.0249 210.164 73.1668 208.799 67.3262C208.472 65.4826 208.02 61.4846 208.11 59.7029C208.727 47.5576 211.102 35.8032 209.97 23.5735C209.194 14.6692 211.738 10.531 203.208 4.44712L202.886 4.42744C200.986 4.28447 199.498 4.34869 197.587 3.68025C183.21 -1.51115 166.892 3.51807 152.249 3.21479C129.434 2.74182 106.55 2.60401 83.7429 2.2726C80.7274 2.22854 77.0693 1.5165 74.171 1.57088C53.0477 1.9651 31.5438 2.66354 10.4979 0.188544ZM92.1513 288.36C82.4421 288.008 73.3305 288.013 63.5894 287.132C57.8355 286.611 49.428 288.646 43.4116 288.613C38.8652 288.556 19.8162 286.794 16.4173 285.528C15.3396 283.292 16.5921 277.846 16.5809 274.733C16.5555 267.833 15.8566 261.421 15.6602 254.516C15.5276 249.866 16.6273 243.632 16.4805 239.207C16.1459 229.124 16.0891 217.358 14.4959 207.486C14.2807 206.155 12.4676 202.03 11.8906 200.699C13.0371 198.285 14.1438 195.852 15.2107 193.4C23.5413 194.675 31.1069 198.144 39.236 200.291C41.5132 200.891 45.2318 202.653 47.4124 202.78C55.2307 203.239 65.9379 200.253 72.1212 195.425C80.7504 188.685 85.804 177.008 91.0324 167.694C93.1784 163.878 96.0129 161.169 98.2723 156.688C100.426 152.413 103.347 147.664 105.459 143.211C105.716 142.667 106.784 142.044 107.392 141.824C116.597 151.714 126.096 162.547 135.411 172.424C142.856 180.322 148.558 191.019 157.293 198.242C163.374 204.664 168.954 211.785 175.333 218.207C184.771 227.708 185.555 237.43 200.051 241.958C200.176 247.611 198.515 281.403 196.391 284.455C194.123 285.73 182.384 285.163 178.746 285.228C173.202 285.331 165.023 286.485 159.916 285.875C148.277 284.478 140.127 283.71 128.581 286.761C126.216 287.389 118.569 286.283 115.726 286.747C107.929 287.146 99.9176 287.619 92.1513 288.36ZM125.992 105.57C140.195 109.04 153.894 113.663 167.465 119.211C170.185 120.323 173.204 121.063 175.942 122.177C183.426 125.717 187.022 129.716 195.681 131.122C196.449 144.05 198.004 157.663 197.193 170.605C196.502 181.639 198.229 192.735 199.634 203.422C199.846 205.035 198.386 220.892 197.969 222.73C195.753 222.852 194.359 220.213 193.116 218.516C187.7 212.9 180.977 206.896 175.928 201.411C171.582 196.696 166.391 188.671 161.916 183.556C159.321 179.928 156.973 176.221 154.182 172.738C150.701 168.392 145.284 164.844 141.76 160.719C132.601 149.989 123.744 138.937 114.978 127.889C111.68 123.734 117.531 118.067 119.078 114.336C120.208 111.656 120.537 108.414 122.364 106.121C123.139 105.246 124.707 105.544 125.992 105.57ZM16.3296 67.4753C21.2918 69.1773 28.5162 73.2681 32.5666 74.3124C54.6429 80.0063 76.2706 85.2179 96.544 96.1299C99.8782 97.9234 104.703 97.486 107.48 100.711C108.085 103.956 101.399 115.11 99.7981 118.859C97.2837 124.747 95.2526 130.941 92.4663 136.695C87.2416 146.267 80.9674 153.805 77.1476 164.197C72.4296 175.653 68.9618 181.067 58.5808 188.849C52.2855 189.505 49.0052 189.842 42.8735 187.391C35.4063 184.41 27.3166 183.013 20.0266 179.394C18.6541 178.719 16.8358 178.414 15.3143 178.161C16.0193 169.799 14.4077 161.178 14.8915 152.722C14.7752 149.516 14.6801 146.239 14.5305 143.038C14.2821 137.724 15.558 132.257 15.6279 127.029C15.8107 113.393 15.7774 99.7112 15.5093 86.079C15.4282 81.9526 12.3335 71.3406 15.1816 68.011L16.3296 67.4753ZM115.879 88.599C112.679 87.1487 109.376 85.4734 105.993 84.5218C102.436 83.521 98.7251 83.0865 95.1462 82.1649C86.3867 79.9089 77.0885 77.3541 68.5981 74.3007C63.2393 72.3732 55.9755 68.7896 50.8624 66.0366C47.9632 64.4752 45.1718 62.2065 42.0696 61.0942C37.5813 59.4854 16.8298 55.0238 15.4976 51.3746C14.5976 48.9099 16.7716 19.1064 18.1338 16.3323C18.3743 15.8429 18.6377 15.5856 19.0924 15.2982C23.6313 14.7175 40.6066 15.4103 46.3962 15.4778L97.661 15.8176C104.118 15.894 118.583 14.574 124.072 15.2007C137.685 16.2071 152.766 16.3102 166.403 15.729C167.65 15.676 170.585 16.7762 171.843 17.2285C176.872 15.804 189.997 15.6488 195.117 17.5721C194.396 24.2907 194.324 36.0995 195.54 42.7332C199.42 63.9024 194.852 85.1213 195.349 106.472C195.4 108.637 196.582 113.901 195.099 115.099C191.582 115.105 186.999 113.327 183.48 112.484C179.955 111.639 175.857 111.272 172.451 110.389C167.324 109.06 161.906 106.6 156.85 104.861C154.256 103.968 151.348 103.104 148.84 102.139C147.118 101.476 144.401 98.3185 142.358 97.6745C133 94.7227 124.89 92.6331 115.879 88.599Z" fill="currentColor"/>
+      </svg>
+      <span>Haven</span>
+    </a>
+    <div class="nav-links-wrap" id="navPanel">
+    <span class="nav-pill" aria-hidden="true"></span>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Pages
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="#">Our Story</a>
+          <a href="#">Careers</a>
+          <a href="#">Journal</a>
+        </div>
+      </li>
+    </ul>
+    <a href="#contact" class="btn btn-white nav-cta-mobile">Get in touch</a>
+    </div>
+    <a href="#contact" class="btn btn-white nav-cta">Get in touch</a>
+    <button class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="navPanel">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-media" aria-hidden="true">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/hero.png">
+      <source src="assets/hero-bg.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="hero-inner">
+    <h1 class="hero-heading" id="heroHeading">
+      <span class="reveal-line">We design</span>
+      <span class="reveal-line">spaces that feel</span>
+      <span class="reveal-line"><em>like home.</em></span>
+    </h1>
+    <p class="hero-sub" data-reveal>Residential and commercial interiors — from a single considered room to a full renovation.</p>
+  </div>
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-value"><span class="stat-num" data-count="12">0</span></span>
+      <span class="stat-label">Years in Practice</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value"><span class="stat-num" data-count="250">0</span>+</span>
+      <span class="stat-label">Projects Delivered</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value"><span class="stat-num" data-count="98">0</span>%</span>
+      <span class="stat-label">Client Satisfaction</span>
+    </div>
+  </div>
+  <button class="scroll-cue" aria-label="Scroll down">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1v13M2 9l6 6 6-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</section>
+
+<!-- ============ 01 ABOUT ============ -->
+<section class="section section-cream" id="about">
+  <div class="section-head">
+    <div class="section-num">
+      <span class="num-big">01</span>
+      <span class="num-label">About us</span>
+    </div>
+    <h2 class="section-heading" data-reveal>Thoughtful design, built around you.</h2>
+  </div>
+
+  <p class="section-lede" data-reveal>Every room starts with a conversation — what you need it to hold, and how you want it to feel.</p>
+
+  <div class="two-col-text" data-reveal>
+    <p>We're a small studio based in Bengaluru, working with clients across India, that takes on a deliberately small number of projects each year — because good interiors take real attention. Every brief starts with how a space is actually lived in, not just how it photographs.</p>
+    <p>From first sketch to final styling, the same people stay on your project the whole way through. Materials are chosen for how they age, not just how they look on day one — the goal is a home that gets better with use.</p>
+  </div>
+
+  <div class="services-strip" id="services" data-reveal>
+    <div class="service-item">
+      <span class="service-num">01</span>
+      <span>Full renovations</span>
+      <p class="service-desc">Structural change, layout and finish, start to finish.</p>
+    </div>
+    <div class="service-item">
+      <span class="service-num">02</span>
+      <span>Single-room styling</span>
+      <p class="service-desc">One room, refreshed without a full renovation.</p>
+    </div>
+    <div class="service-item">
+      <span class="service-num">03</span>
+      <span>Furniture &amp; sourcing</span>
+      <p class="service-desc">Pieces sourced, restored, or commissioned to fit.</p>
+    </div>
+    <div class="service-item">
+      <span class="service-num">04</span>
+      <span>Space planning</span>
+      <p class="service-desc">Layouts that make a space work harder for you.</p>
+    </div>
+  </div>
+
+  <div class="gallery-strip" data-reveal-group>
+    <div class="media ratio-4-5" data-reveal-img><img src="images/about-1.jpg" alt="Living room styled with natural materials" loading="lazy"></div>
+    <div class="media ratio-16-10" data-reveal-img><img src="images/about-2.jpg" alt="Open-plan living space with large windows" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- ============ 02 SUCCESS ============ -->
+<section class="section section-white" id="success">
+  <div class="section-head">
+    <div class="section-num">
+      <span class="num-big">02</span>
+      <span class="num-label">Our approach</span>
+    </div>
+    <h2 class="section-heading section-heading-right" data-reveal>Built on care, craft, and a clear point of view.</h2>
+  </div>
+
+  <div class="stat-row" data-reveal>
+    <div class="stat-col">
+      <span class="stat-big"><span class="stat-num" data-count="250">0</span>+</span>
+      <p>Projects delivered across residential and commercial spaces.</p>
+    </div>
+    <div class="stat-col">
+      <span class="stat-big"><span class="stat-num" data-count="90">0</span>+</span>
+      <p>Clients who've trusted us with more than one room.</p>
+    </div>
+    <div class="stat-col">
+      <span class="stat-big"><span class="stat-num" data-count="18">0</span></span>
+      <p>Designers, makers and project leads on the team.</p>
+    </div>
+    <div class="stat-col">
+      <span class="stat-big">₹<span class="stat-num" data-count="18.5" data-decimal="true">0</span>Cr+</span>
+      <p>In build and furnishing budgets managed to date.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 PROCESS ============ -->
+<section class="section section-cream" id="process">
+  <div class="section-head">
+    <div class="section-num">
+      <span class="num-big">03</span>
+      <span class="num-label">How we work</span>
+    </div>
+    <h2 class="section-heading" data-reveal>A process built for fewer surprises.</h2>
+  </div>
+
+  <p class="section-lede" data-reveal>The same four stages for every project, whether it's one room or a full renovation.</p>
+
+  <div class="stat-row" data-reveal>
+    <div class="stat-col">
+      <span class="stat-big">01</span>
+      <p><strong>Discovery &amp; brief.</strong> A conversation about how you live, your budget range, and what the space needs to do for you.</p>
+    </div>
+    <div class="stat-col">
+      <span class="stat-big">02</span>
+      <p><strong>Concept &amp; design.</strong> Layouts, materials and a full concept board, refined together before anything is ordered.</p>
+    </div>
+    <div class="stat-col">
+      <span class="stat-big">03</span>
+      <p><strong>Sourcing &amp; execution.</strong> We manage vendors, contractors and site visits, so you're seeing progress, not problems.</p>
+    </div>
+    <div class="stat-col">
+      <span class="stat-big">04</span>
+      <p><strong>Styling &amp; handover.</strong> Furniture placed, details styled, and a walkthrough before you move back in.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 PROJECTS ============ -->
+<section class="section section-dark" id="projects">
+  <div class="section-head section-head-dark">
+    <div class="section-num">
+      <span class="num-big">04</span>
+      <span class="num-label">Projects</span>
+    </div>
+    <h2 class="section-heading" data-reveal>Work that speaks for itself.</h2>
+  </div>
+
+  <p class="section-lede" data-reveal>A selection of recent interiors, from full renovations to single-room refreshes.</p>
+
+  <div class="compare" data-reveal>
+    <div
+      class="compare-frame"
+      data-compare-frame
+      role="slider"
+      tabindex="0"
+      aria-label="Before and after comparison, drag or use arrow keys"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-valuenow="50"
+    >
+      <img class="compare-img compare-after" src="assets/after.png" alt="Living room after renovation" draggable="false">
+      <div class="compare-after-wrap" data-compare-after>
+        <img class="compare-img compare-before" src="assets/before.png" alt="Living room before renovation" draggable="false">
+      </div>
+      <span class="compare-label compare-label-before">Before</span>
+      <span class="compare-label compare-label-after">After</span>
+      <div class="compare-handle" data-compare-handle>
+        <span class="compare-handle-line"></span>
+        <span class="compare-handle-grip">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5 1L1 7l4 6M9 1l4 6-4 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </div>
+    </div>
+    <p class="compare-caption">Same room, same angle — drag to see the renovation.</p>
+  </div>
+
+  <div class="project-grid" data-reveal-group>
+    <a class="project-card" href="#" data-reveal-img>
+      <div class="media ratio-4-3"><img src="images/project-1.jpg" alt="Quiet Loft — living room" loading="lazy"></div>
+      <div class="project-meta"><span>Quiet Loft</span><span class="view-link">View project →</span></div>
+      <span class="project-sub">Bengaluru · Full renovation · 1,850 sq ft</span>
+    </a>
+    <a class="project-card project-card-offset" href="#" data-reveal-img>
+      <div class="media ratio-4-3"><img src="images/project-2.jpg" alt="Garden Kitchen — marble counter kitchen" loading="lazy"></div>
+      <div class="project-meta"><span>Garden Kitchen</span><span class="view-link">View project →</span></div>
+      <span class="project-sub">Pune · Kitchen &amp; dining · 420 sq ft</span>
+    </a>
+    <a class="project-card" href="#" data-reveal-img>
+      <div class="media ratio-4-3"><img src="images/project-3.jpg" alt="Studio Office — desk and workspace" loading="lazy"></div>
+      <div class="project-meta"><span>Studio Office</span><span class="view-link">View project →</span></div>
+      <span class="project-sub">Bengaluru · Commercial fit-out · 3,200 sq ft</span>
+    </a>
+    <a class="project-card project-card-offset" href="#" data-reveal-img>
+      <div class="media ratio-4-3"><img src="images/project-4.jpg" alt="Riverside Living — couch beside window" loading="lazy"></div>
+      <div class="project-meta"><span>Riverside Living</span><span class="view-link">View project →</span></div>
+      <span class="project-sub">Chennai · Full renovation · 2,100 sq ft</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ 05 TESTIMONIALS ============ -->
+<section class="section section-cream" id="testimonials">
+  <div class="section-head">
+    <div class="section-num">
+      <span class="num-big">05</span>
+      <span class="num-label">Testimonials</span>
+    </div>
+    <h2 class="section-heading" data-reveal>What clients say after moving back in.</h2>
+  </div>
+
+  <p class="section-lede" data-reveal>A few words from people who've lived with the results.</p>
+
+  <div class="testimonial-grid" data-reveal>
+    <div class="testimonial-item">
+      <span class="testimonial-stars" aria-hidden="true">★★★★★</span>
+      <p class="testimonial-quote">"They started by asking how we actually use our kitchen, not how we wanted it to look in photos. A year on, it still works exactly the way we need it to."</p>
+      <span class="testimonial-name">Ananya &amp; Rohit Sharma</span>
+      <span class="testimonial-role">Bengaluru · Full home renovation</span>
+    </div>
+    <div class="testimonial-item">
+      <span class="testimonial-stars" aria-hidden="true">★★★★★</span>
+      <p class="testimonial-quote">"We'd already tried two other studios before this one. The difference was communication — we always knew what was happening and why."</p>
+      <span class="testimonial-name">Priya Menon</span>
+      <span class="testimonial-role">Chennai · Single-room styling</span>
+    </div>
+    <div class="testimonial-item">
+      <span class="testimonial-stars" aria-hidden="true">★★★★★</span>
+      <p class="testimonial-quote">"Our office needed to feel calm without feeling corporate. They got the brief in one meeting and never wavered from it."</p>
+      <span class="testimonial-name">Karan Bhatia</span>
+      <span class="testimonial-role">Pune · Commercial fit-out</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 TEAM ============ -->
+<section class="section section-white" id="team">
+  <div class="section-head">
+    <div class="section-num">
+      <span class="num-big">06</span>
+      <span class="num-label">The studio</span>
+    </div>
+    <h2 class="section-heading" data-reveal>The same people, start to finish.</h2>
+  </div>
+
+  <p class="section-lede" data-reveal>Stay close to how we work. A few faces behind the projects, and the moments in between.</p>
+
+  <div class="team-strip" data-reveal-group>
+    <div class="team-col team-col-a">
+      <div class="media ratio-3-4 team-photo" data-reveal-img><img src="images/team-1.jpg" alt="Aanya Rao, Principal Designer" loading="lazy"></div>
+      <div class="team-caption"><span class="team-name">Aanya Rao</span><span class="team-role">Principal Designer</span></div>
+    </div>
+    <div class="team-col team-col-b">
+      <div class="media ratio-3-4 team-photo" data-reveal-img><img src="images/team-2.jpg" alt="Kabir Mehta, Design Lead" loading="lazy"></div>
+      <div class="team-caption"><span class="team-name">Kabir Mehta</span><span class="team-role">Design Lead</span></div>
+    </div>
+    <div class="team-col team-col-c">
+      <div class="media ratio-3-4 team-photo" data-reveal-img><img src="images/team-3.jpg" alt="Priya Nair, Project Director" loading="lazy"></div>
+      <div class="team-caption"><span class="team-name">Priya Nair</span><span class="team-role">Project Director</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 FAQ ============ -->
+<section class="section section-cream" id="faq">
+  <div class="section-head">
+    <div class="section-num">
+      <span class="num-big">07</span>
+      <span class="num-label">FAQs</span>
+    </div>
+    <h2 class="section-heading" data-reveal>Answers to the questions<br>we hear most.</h2>
+  </div>
+
+  <div class="faq-layout">
+    <div class="faq-aside" data-reveal>
+      <p class="faq-aside-text">Still have questions? We're happy to talk it through before you commit to anything.</p>
+      <a href="#contact" class="btn btn-dark">Get in touch</a>
+    </div>
+
+    <div class="accordion" data-reveal>
+      <div class="accordion-item is-open">
+        <button class="accordion-trigger">
+          <span>How long does a typical project take?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Most single-room projects run 6–10 weeks from final sign-off to installation. Full-home renovations usually take four to seven months, depending on scope and how much structural work is involved.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">
+          <span>Do you work outside the city?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Yes — around a third of our projects are outside our home base. Site visits are scoped into the proposal up front so there are no surprises later.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">
+          <span>Can I keep pieces I already own?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Almost always. We start every project with a walkthrough of what you already have, and design around the pieces worth keeping rather than starting from zero.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">
+          <span>What does the first meeting involve?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>A 45-minute call or studio visit to talk through the space, your budget range, and timeline. No obligation — it's how we work out if we're a good fit for each other.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">
+          <span>How do you charge for your services?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>A flat design fee, agreed upfront and scoped to the size of the project — not a percentage of your budget. Execution and sourcing costs are billed separately and itemised before you approve them.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 CONTACT ============ -->
+<section class="section section-white" id="contact">
+  <div class="section-head">
+    <div class="section-num">
+      <span class="num-big">08</span>
+      <span class="num-label">Get in touch</span>
+    </div>
+    <h2 class="section-heading" data-reveal>Tell us about your space.</h2>
+  </div>
+
+  <p class="section-lede" data-reveal>Based in Bengaluru, working with clients across India. We reply within one working day.</p>
+
+  <div class="contact-layout" data-reveal>
+    <div class="contact-details">
+      <div class="contact-block">
+        <span class="contact-label">Studio</span>
+        <p>4th Floor, 100 Feet Road, Indiranagar<br>Bengaluru, Karnataka 560038</p>
+      </div>
+      <div class="contact-block">
+        <span class="contact-label">Phone &amp; WhatsApp</span>
+        <a href="tel:+919876543210">+91 98765 43210</a>
+      </div>
+      <div class="contact-block">
+        <span class="contact-label">Email</span>
+        <a href="mailto:hello@havenstudio.in">hello@havenstudio.in</a>
+      </div>
+      <div class="contact-block">
+        <span class="contact-label">Hours</span>
+        <p>Monday–Saturday, 10am–7pm IST</p>
+      </div>
+      <a href="https://wa.me/919876543210" class="btn btn-dark contact-whatsapp" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+
+    <form class="contact-form" onsubmit="return false;">
+      <div class="form-row">
+        <label>Name<input type="text" name="name" autocomplete="name" required></label>
+        <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
+      </div>
+      <label>Email<input type="email" name="email" autocomplete="email" required></label>
+      <label>Project type
+        <select name="project-type">
+          <option>Full home renovation</option>
+          <option>Single-room styling</option>
+          <option>Commercial space</option>
+          <option>Not sure yet</option>
+        </select>
+      </label>
+      <label>Tell us about your space<textarea name="message" rows="4" placeholder="Location, approximate size, and what you'd like to change."></textarea></label>
+      <button type="submit" class="btn btn-dark">Send message</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ CTA SPLIT ============ -->
+<section class="cta-split" data-reveal>
+  <div class="cta-media" aria-hidden="true"></div>
+  <div class="cta-scrim"></div>
+  <div class="cta-col">
+    <span class="cta-eyebrow">Our work</span>
+    <h3 class="cta-heading">Your space,<br>our expertise</h3>
+    <a href="#projects" class="btn btn-white">See our projects</a>
+  </div>
+  <div class="cta-col cta-col-b">
+    <span class="cta-eyebrow">Get started</span>
+    <h3 class="cta-heading">Let's begin<br>the conversation</h3>
+    <a href="#contact" class="btn btn-white">Get in touch</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-intro">
+      <p class="footer-tagline">Interiors that feel<br>considered, not decorated.</p>
+      <p class="footer-address">Indiranagar, Bengaluru<br>Working with clients across India.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <span class="footer-col-title">Studio</span>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#team">The studio</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-title">Work</span>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQs</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-title">More</span>
+        <a href="#">Journal</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">Licensing</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-wordmark" aria-hidden="true">Haven</div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Haven Studio. All rights reserved.</span>
+    <div class="footer-social">
+      <a href="#" aria-label="Haven on Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.5"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor"/></svg>
+      </a>
+      <a href="#" aria-label="Haven on Pinterest">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.5"/><path d="M9.5 18c0.6-2.4 1.4-5.6 1.4-5.6M12 12.3c0 1.6 1 2.9 2.4 2.9 1.9 0 3.2-1.9 3.2-4.5 0-2.1-1.6-3.9-4-3.9-3 0-4.6 2.1-4.6 4.3 0 0.9.4 1.9 1 2.3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#" aria-label="Haven on LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2.5" y="2.5" width="19" height="19" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="7.6" cy="7.8" r="1.15" fill="currentColor"/><path d="M7.6 11v6.2M11.4 17.2V13c0-1.4.9-2.3 2.1-2.3 1.2 0 2 .8 2 2.4v4.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+    <span>Placeholder content — replace before launch.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
