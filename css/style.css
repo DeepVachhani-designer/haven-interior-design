@@ -92,11 +92,13 @@ h1, h2, h3, p { margin: 0; }
 }
 .btn-white { background: var(--paper); color: var(--ink); }
 .btn-white:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,0.18); }
-.btn-white:active { transform: translateY(0); }
+/* press feedback is instant, not on the same 0.35s clock as the hover lift —
+   waiting for that transition to catch up makes a tap feel laggy */
+.btn-white:active { transform: translateY(0) scale(0.98); transition: transform 0.1s ease-out; }
 
 .btn-dark { background: var(--ink); color: #fff; }
 .btn-dark:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,0.22); }
-.btn-dark:active { transform: translateY(0); }
+.btn-dark:active { transform: translateY(0) scale(0.98); transition: transform 0.1s ease-out; }
 
 /* diagonal light sweep on hover, sits above the fill, below the label */
 .btn::before {
@@ -344,6 +346,10 @@ h1, h2, h3, p { margin: 0; }
 @keyframes lineUp {
   to { transform: translateY(0); opacity: 1; }
 }
+@media (prefers-reduced-motion: reduce) {
+  /* skip the slide-up intro entirely — the lines are just visible */
+  .reveal-line { transform: none; opacity: 1; animation: none; }
+}
 
 .hero-stats {
   position: relative;
@@ -377,6 +383,9 @@ h1, h2, h3, p { margin: 0; }
   animation: bob 2.2s ease-in-out infinite;
 }
 @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue { animation: none; }
+}
 
 @media (max-width: 600px) {
   .scroll-cue { display: none; }
@@ -798,3 +807,38 @@ h1, h2, h3, p { margin: 0; }
   transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
 }
 [data-reveal-img].in-view { opacity: 1; transform: translateY(0) scale(1); }
+
+@media (prefers-reduced-motion: reduce) {
+  /* cross-fade instead of the slide/scale — motion is gone, the appear-once
+     reveal itself (an aid to comprehension, not decoration) is kept */
+  [data-reveal],
+  [data-reveal-img] {
+    transform: none;
+    transition: opacity 0.3s ease;
+  }
+}
+
+/* ==========================================================================
+   REDUCED TRANSPARENCY
+   ========================================================================== */
+/* The three surfaces on the site that rely on backdrop-filter: firm them up
+   to a near-solid background and drop the blur instead of just going opaque,
+   which would otherwise leave a flat, undifferentiated block. Placed last so
+   it wins by source order over each surface's own (earlier) definition. */
+@media (prefers-reduced-transparency: reduce) {
+  .nav {
+    background: rgba(14,14,14,0.96);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .nav-links-wrap {
+    background: rgba(14,14,14,0.99);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .compare-label {
+    background: rgba(14,14,14,0.85);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
