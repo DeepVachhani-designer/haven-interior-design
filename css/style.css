@@ -392,7 +392,7 @@ h1, h2, h3, p { margin: 0; }
   .hero-stats { gap: 20px 32px; }
   /* cover-crop trims the sides on a narrow portrait frame; shift left so
      the cats in the footage stay in view instead of getting cropped off */
-  .hero-video { object-position: 25% center; }
+  .hero-video { object-position: 5% center; }
 }
 
 /* Landscape phones: 100svh is only ~390px tall, and the desktop 120px top
